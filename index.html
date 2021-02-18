@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Galerija</title>
+        <style>
+
+
+            .grid-box{
+                float: left;
+            }
+            .grid-box {
+                display: inline-block;
+                width: 22vh;
+                height: 20vh;
+                margin: 1em;
+                border-radius: 8px;
+                background-color:#6565f7;
+            }
+            .picture-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                justify-items: center;
+                grid-gap 10px;
+            }
+            body {
+                font-family: sans-serif;
+                 width: 100%;
+                 height: 100%;
+                 margin: 0px;
+                 padding: 0px;
+            }
+
+            .picture-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+                justify-items: center;
+                grid-gap 5px;
+                grid-row-gap: 0px;
+            }
+
+            .grid-box img {
+                 width: 100%;
+            }
+            body {
+                 width: 100%;
+                 height: 100%;
+                 margin: 0px;
+                 padding: 0px;
+             }
+
+            .text{
+                 text-align: center;
+                 background-color: #f9e1e1;
+                 height: 25px;
+                 border-radius: 8px;
+                 margin-top: 13px;
+             }
+
+             @media screen and (max-width 414px;) {
+                 .grid-box{
+                     width: 100%;
+                 }
+             }
+             @media screen and (max-width 768px;) {
+                 .grid-box{
+                     width: 50%;
+                 }
+             }
+             @media screen and (max-width 1024px;) {
+                 .grid-box{
+                     width: 33.33%;
+                 }
+             }
+
+        </style>
+    </head>
+    <body>
+        <h1>Gallery Heading</h1>
+        <div class="picture-grid">
+            <div class="grid-box"><img src="slike/placeholder-image.png" /><div class="text">Image Title</div></div>
+            <div class="grid-box"><img src="slike/placeholder-image.png" /><div class="text">Image Title</div></div>
+            <div class="grid-box"><img src="slike/placeholder-image.png" /><div class="text">Image Title</div></div>
+            <div class="grid-box"><img src="slike/placeholder-image.png" /><div class="text">Image Title</div></div>
+            <div class="grid-box"><img src="slike/placeholder-image.png" /><div class="text">Image Title</div></div>
+            <div class="grid-box"><img src="slike/placeholder-image.png" /><div class="text">Image Title</div></div>
+            <div class="grid-box"><img src="slike/placeholder-image.png" /><div class="text">Image Title</div></div>
+            <div class="grid-box"><img src="slike/placeholder-image.png" /><div class="text">Image Title</div></div>
+            <div class="grid-box"><img src="slike/placeholder-image.png" /><div class="text">Image Title</div></div>
+            <div class="grid-box"><img src="slike/placeholder-image.png" /><div class="text">Image Title</div></div>
+        </div>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam recusandae quasi facilis nostrum ducimus vero est modi assumenda mollitia sequi? Iusto distinctio, incidunt debitis voluptatem molestias veniam assumenda vel dolorum! Lorem ipsum dolor sit amet consectetur adipisicing elit. A accusamus amet aliquam! Sed, rem deserunt labore inventore sunt delectus voluptatum quisquam odio vitae, omnis soluta maxime, aperiam adipisci debitis? Impedit? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor culpa, quo voluptatibus magnam, consequuntur odit minus dicta beatae inventore maxime rem temporibus nesciunt. Suscipit maiores recusandae enim nesciunt. Unde, necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate omnis quibusdam odit amet. Omnis sequi laboriosam laborum vitae mollitia, excepturi quisquam odit, deleniti rerum voluptates sunt voluptatem officiis, expedita esse?</p>
+
+    </body>
+</html>
